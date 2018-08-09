@@ -14,7 +14,7 @@ function jr_woocommerce_custom_fee() {
 	$fee = 1.99;
 
 	if ( $chosen_gateway == 'cod' ) {
-		WC()->cart->add_fee( __( 'Shiiping option fee', 'storefront' ), $fee, false, '' );
+		WC()->cart->add_fee( __( 'Shipping option fee', 'storefront' ), $fee, false, '' );
 	}
 }
 add_action( 'woocommerce_cart_calculate_fees', 'jr_woocommerce_custom_fee' );
