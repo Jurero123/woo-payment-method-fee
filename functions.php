@@ -29,7 +29,6 @@ function jr_cart_update_script() {
 		<script>
             jQuery(function ($) {
 
-                // woocommerce_params is required to continue, ensure the object exists
                 if (typeof woocommerce_params === 'undefined') {
                     return false;
                 }
